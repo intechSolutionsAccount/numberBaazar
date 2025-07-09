@@ -50,12 +50,12 @@ export function VIPNumberCard({ number }: VIPNumberCardProps) {
       </CardHeader>
       <CardContent className="p-4">
         <div className="space-y-4 text-center">
-          <h3 className="text-4xl font-bold group-hover:text-white group-focus-within:text-white tracking-wide">
+          <h3 className="text-2xl font-bold group-hover:text-white group-focus-within:text-white tracking-wide">
             +91 {number.mobile_number}
           </h3>
           
           <div className="flex justify-center items-center py-2">
-            <span className="text-2xl font-medium group-hover:text-white group-focus-within:text-white">
+            <span className="text-xl font-medium group-hover:text-white group-focus-within:text-white">
               {/* Sum Total = <span className="font-bold">{twoDigitSum} → {oneDigitSum}</span> */}
               Sum Total = <span className="font-bold">{twoDigitSum} = {oneDigitSum}</span>
             </span>

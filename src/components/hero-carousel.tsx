@@ -7,45 +7,38 @@ import { cn } from "@/lib/utils";
 const carouselSlides = [
   {
     id: 1,
-    image: "/images/vip1.jpg",
+    image: "/images/vip5.jpeg",
     alt: "Person holding smartphone with VIP number display",
     title: "Premium VIP Numbers",
     subtitle: "Stand out with exclusive mobile numbers"
   },
   {
     id: 2,
-    image: "/images/vip2.jpg",
-    alt: "Luxury phone with golden number display",
-    title: "Luxury Collection",
-    subtitle: "Numbers that reflect your status"
-  },
-  {
-    id: 3,
-    image: "/images/vip3.jpg",
+    image: "/images/vip4.jpeg",
     alt: "Astrologer with numerology charts",
     title: "Lucky Numbers",
     subtitle: "Choose numbers with positive energy"
   },
   {
-    id: 4,
-    image: "/images/vip4.png",
+    id: 3,
+    image: "/images/vip3.jpg",
     alt: "Modern luxury building with VIP signage",
     title: "VIP Lifestyle",
     subtitle: "Numbers for the distinguished"
   },
   {
-    id: 5,
-    image: "/images/vip5.webp",
-    alt: "Businessman with premium mobile device",
-    title: "Business Elite",
-    subtitle: "Professional numbers for success"
-  },
-  {
-    id: 6,
+    id: 4,
     image: "/images/vip6.webp",
     alt: "Starry night representing special numbers",
     title: "Special Edition",
     subtitle: "Rare and exclusive number patterns"
+  },
+  {
+    id: 5,
+    image: "/images/vip1.jpg",
+    alt: "Businessman with premium mobile device",
+    title: "Business Elite",
+    subtitle: "Professional numbers for success"
   }
 ];
 
@@ -161,7 +154,7 @@ export function HeroCarousel() {
                       <img
                         src={slide.image}
                         alt=""
-                        className="w-full h-full object-cover filter blur-lg scale-110 opacity-50"
+                        className="w-full h-full object-cover filter blur-lg scale-110"
                         loading={index === 0 ? "eager" : "lazy"}
                         style={{
                           imageRendering: 'auto',
@@ -171,7 +164,7 @@ export function HeroCarousel() {
                     </div>
                     
                     {/* Main sharp image with preserved aspect ratio */}
-                    <div className="absolute inset-0 flex items-center justify-center p-4">
+                    <div className="absolute inset-0 flex items-center justify-center">
                       <img
                         src={slide.image}
                         alt={slide.alt}

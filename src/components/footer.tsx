@@ -102,7 +102,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-8 pt-6 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Number Baazar. All rights reserved.
+            &copy; 2013 Number Baazar. All rights reserved.
           </p>
         </div>
       </div>
